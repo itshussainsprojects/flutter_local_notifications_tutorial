@@ -1,0 +1,37 @@
+group 'com.tryingoutsomething.soundmode.sound_mode'
+version '1.0'
+
+buildscript {
+    repositories {
+        google()
+        mavenCentral()
+    }
+
+    dependencies {
+        classpath 'com.android.tools.build:gradle:7.3.1'
+    }
+}
+
+rootProject.allprojects {
+    repositories {
+        google()
+        mavenCentral()
+    }
+}
+
+apply plugin: 'com.android.library'
+
+android {
+    defaultConfig {
+        namespace 'com.tryingoutsomething.soundmode.sound_mode'
+        compileSdk 34
+        minSdkVersion 16
+    }
+    lintOptions {
+        disable 'InvalidPackage'
+    }
+}
+
+dependencies {
+    implementation 'androidx.annotation:annotation:1.7.0'
+}

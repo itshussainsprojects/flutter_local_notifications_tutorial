@@ -1,0 +1,36 @@
+name: flutter_local_notifications_tutorial
+description: "A new Flutter project."
+publish_to: 'none'
+
+version: 1.0.0+1
+
+environment:
+  sdk: '>=3.2.0 <4.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  google_fonts: ^3.0.1
+  cupertino_icons: ^1.0.2
+  awesome_notifications: ^0.8.2
+  timezone: ^0.7.0
+  geolocator: ^7.7.0
+  permission_handler: ^10.0.0
+  sound_mode:
+    path: 'lib/sound_mode'
+  
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^2.0.0
+
+flutter:
+  assets:
+    - images/silence.jpg
+  fonts:
+    - family: PaulJackson
+      fonts:
+        - asset: assets/fonts/PaulJackson.ttf
+        
